@@ -2,22 +2,42 @@
     background-color: inherit;
     text-align: right;
     vertical-align: middle;
-    width: 100%;
+    width: 70%;
     height: 40px;
   }
+  .header {
+    color: yellow;
+    font-family: fantasy;
+    font-size: 36px; 
+  }
 
-  
-/* Style the buttons that are used to open the tab content */
+  /* Style the buttons that are used to open the tab content */
 .tab button {
-    background-color: inherit;
-    width: 15%;
-    height: 100%;
-    text-align: left;
-    text-decoration-color: #3F2C2A;
-    cursor: pointer;
-    vertical-align: middle;
-    transition: 0.3s;
-    font-family:Georgia;
+  background-color: inherit;
+  width: 20%;
+  height: 100%;
+  text-align: left;
+  text-decoration-color: #3F2C2A;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s;
+  font-family:Georgia;
+}
+
+  @media screen and (max-width : 835px) {
+
+    .header {
+      font-size: 26px; 
+    }
+
+    .tab button {
+      word-wrap: break-word;
+    }
+
+    .button-text{
+      word-wrap: break-word;
+      white-space: normal;
+    }
   }
 
   /* Add this to align vertically */
@@ -36,8 +56,3 @@ button > span {
   background-color: #C86A45;
 }
 
-.header {
-  color: yellow;
-  font-family: fantasy;
-  font-size: 36px; 
-}
